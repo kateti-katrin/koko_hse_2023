@@ -7,7 +7,7 @@ body {
 
 h2 {
     color: white;
-    font-size: 58px; /* Установка размера шрифта для h2 */
+    font-size: 58px;
 }
 
 .line1 {
@@ -142,19 +142,15 @@ h2 {
     justify-content: space-between;
 }
 .venera, .mars, .jupiter {
-    width: 260px;
+    width: 320px;
     height: 447px;
     border-right: 6px solid white;
-    display: flex;          /* Применяем Flexbox */
-    flex-direction: column; /* Элементы упорядочены вертикально */
-    align-items: center;    /* Выравнивание элементов по центру по горизонтали */
-    justify-content: center;/* Выравнивание элементов по центру по вертикали */
-    text-align: center;     /* Выравнивание текста по центру */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-
-
-
-
 .line2_bottom {
     width: 960px;
     height: 149px;
@@ -165,7 +161,15 @@ h2 {
     align-items: center;
     justify-content: center;
 }
-
+.insidevenera {
+    margin-top: 135px;
+}
+.insidemars {
+    margin-top: 100px;
+}
+.insidejupiter {
+    margin-top: 59px;
+}
 .line2_bottom img {
     animation: move4 3s linear infinite;
 }
@@ -177,12 +181,6 @@ h2 {
       transform: translateX(-400px);
     }
 }
-
-
-
-
-
-
 
 .line3 {
     display: flex;
@@ -281,10 +279,10 @@ h2 {
 }
 @keyframes move3 {
     0%, 100% {
-      transform: translateX(0); /* Начальное и конечное положение: без сдвига */
+      transform: translateX(0);
     }
     50% {
-      transform: translateX(-1400px); /* В середине анимации: сдвиг вправо на 100 пикселей */
+      transform: translateX(-1400px);
     }
 }
 .slideshow-container {
@@ -323,17 +321,17 @@ h2 {
 
 .rocket {
     position: absolute;
-    top: 50%;                  /* Центрирование ракеты по вертикали */
-    transform: translateY(-50%); /* Смещение ракеты, чтобы она была центрирована по Y */
-    animation: flyacross 5s linear infinite; /* Анимация для движения ракеты */
+    top: 50%;
+    transform: translateY(-50%);
+    animation: flyacross 5s linear infinite;
 }
 
 @keyframes flyacross {
     0% {
-        left: -100%; /* Начальное положение ракеты за пределами экрана слева */
+        left: -100%;
     }
     100% {
-        left: 100%; /* Конечное положение ракеты за пределами экрана справа */
+        left: 100%;
     }
 }
 .rocket,
@@ -362,41 +360,40 @@ h2 {
 }
 .line7 {
     display: flex;
-    align-items: center; /* Выравнивание элементов по центру по вертикали */
-    justify-content: space-between; /* Распределение пространства между элементами */
-    position: relative; /* Для абсолютного позиционирования дочерних элементов */
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
     background-color: #061D2D;
     height: 298px;
 }
 
 .line7_left {
-    flex: 0 0 auto; /* Убираем гибкость размера, чтобы блок не растягивался */
-    padding-left: 54px; /* Отступ слева для логотипа */
+    flex: 0 0 auto;
+    padding-left: 54px;
 }
 
 .line7_left img {
     display: block;
-    /* Убираем margin: 0 auto; чтобы изображение не центрировалось */
 }
 
 .line7_right {
-    flex: 1; /* Гибкое распределение пространства */
+    flex: 1;
 }
 
 h1 {
     position: absolute;
-    top: 87px; /* Отступ от верхней границы блока */
-    right: 54px; /* Отступ от правой границы блока */
-    color: #fff; /* Цвет текста */
+    top: 87px;
+    right: 54px;
+    color: #fff;
     font-size: 50px;
-    margin: 0; /* Убираем стандартные отступы */
+    margin: 0;
 }
 
 h3 {
     position: absolute;
-    bottom: 88px; /* Отступ от нижней границы блока */
-    right: 54px; /* Отступ от правой границы блока */
-    color: #80868A; /* Цвет текста */
+    bottom: 88px;
+    right: 54px;
+    color: #80868A;
     font-size: 44px;
-    margin: 0; /* Убираем стандартные отступы */
+    margin: 0;
 }
